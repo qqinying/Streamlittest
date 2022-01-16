@@ -2,6 +2,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# set page
+st.set_page_config(
+     page_title="CCS App",
+     page_icon="🧊",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://www.google.com',
+         'Report a bug': "https://www.github.com",
+         'About': "# This is a CCS app. This is an *extremely* cool app!"
+     }
+ )
+
 # app title
 st.title("Uber pickups in NYC by JY (beta version)")
 
